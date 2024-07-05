@@ -7,3 +7,6 @@ Route::get('/', function () {
 });
 
 Route::get('/simple', [App\Http\Controllers\SimplePageController::class, 'index']);
+
+Route::get('/about', [App\Http\Controllers\AboutPageController::class, 'show']);
+// Route::get('/about', 'AboutPageController@show');
